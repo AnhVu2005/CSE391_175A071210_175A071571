@@ -7,10 +7,12 @@
 }
 
 body{
+    overflow-x: hidden;
     background-color: #222222;
 }
 
-.container .head{
+/* Header section css */
+.header .header_container{
     position: absolute;
     top: 0;
     left: 0;
@@ -22,12 +24,12 @@ body{
     margin-top: 22px;
     z-index: 10000;
 }
-.container .head img{
+.header .header_container img{
     width: 13%;
     margin-right: 900px;
 }
 
-.container .head a{
+.header .header_container a{
     color: #fff;
     text-decoration: none;
     background-color: #e50914;
@@ -35,6 +37,9 @@ body{
     border-radius: 4px;
     margin-right: 8px;
 }
+/* end header section */
+
+/* Banner section css */
 .banner::before{
     content: "";
     position: absolute;
@@ -144,7 +149,9 @@ body{
     z-index: 1;
     background: linear-gradient(to top, #000, transparent)
 }
+/* end banner section css */
 
+/* story part 1 section */
 .part1{
     display: flex;
     flex-direction: row;
@@ -175,6 +182,9 @@ body{
 .part1 .img img{
     width: 100%;
 }
+/* end story section */
+
+/* list section css */
 .list-wrapped{
     background-color: black;
 }
@@ -244,6 +254,7 @@ body{
     transition: 5s linear;
 }
 
+/* email-form css */
 .email-form{
     background-color: black;
     border-bottom: 0.6rem solid #111;
@@ -313,3 +324,4 @@ body{
     z-index: 1;
     background: linear-gradient(to top, #000, transparent)
 }
+/* end email-form css */
