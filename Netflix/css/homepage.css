@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 body{
@@ -83,7 +83,7 @@ body{
     text-align: center;
 }
 .banner .box .heading h1{
-    font-size: 3.8rem;
+    font-size: 3.125rem;
     font-weight: bold;
     color: #fff;
     letter-spacing: 2px;
@@ -349,15 +349,16 @@ body{
     border-bottom: 1px solid #ccc;
 }
 .footer-wrapped a{
-    color: #ccc;
+    color: #757575;
     text-decoration: none;
 }
 .footer-wrapped .part-one li a:hover{
     border-bottom: 1px solid #ccc;
 }
 .footer-wrapped .part-one li a{
-    color: #ccc;
+    color: #757575;
     text-decoration: none;
+    font-size: 13px;
 }
 .footer-btn {
     display: flex;
@@ -380,4 +381,14 @@ body{
 }
 .footer-wrapped .col-md{
     padding-top: 20px;
+    font-size: 13px;
+}
+
+ul { 
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li{
+    margin-bottom: 10px;
 }
