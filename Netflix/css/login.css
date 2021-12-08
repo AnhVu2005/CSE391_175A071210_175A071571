@@ -51,9 +51,11 @@ body{
 }
 
 .login-form h2{
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: bold;
     color: white;
     margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .login-form input{
