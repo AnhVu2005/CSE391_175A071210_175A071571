@@ -71,7 +71,10 @@ body{
 }
 
 .input__wrap{
-    margin-bottom: 25px;
+    margin-bottom: 18px;
+}
+.input__wrap button{
+    margin-top: 25px;
 }
 
 .login-form button{
@@ -87,9 +90,9 @@ body{
 
 .support{
     display: flex;
-    color: #737373;
+    color: #ccc;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 12.5px;
 }
 
 .support input{
@@ -107,6 +110,12 @@ body{
     margin-right: 10px;
     height: 25px;
 }
+
+.remember .checkbox{
+    width: 18px;
+    height: 18px;
+}
+
 
 /* Login footer */
 .login__fb{
@@ -147,6 +156,10 @@ body{
     text-decoration: none;
 }
 
+.signup a:hover{
+    text-decoration: underline;
+}
+
 .terms{
     color: #737373;
     font-size: 13px;
@@ -157,13 +170,17 @@ body{
     color: blue;
 }
 
+.terms a:hover{
+    text-decoration: underline;
+}
+
 /* footer css */
 .footer-wrapped{
     height: 100%;
     justify-content: space-between;
     padding: 0 18%;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     background-color: #000;
     color: #fff;
 }
@@ -223,68 +240,3 @@ li{
     margin-bottom: 10px;
 }
 
-/* footer css */
-.footer-wrapped{
-    height: 100%;
-    justify-content: space-between;
-    padding: 0 18%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: rgba(0, 0, 0, 0.85);
-    color: #fff;
-}
-
-.footer-wrapped .part-one{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 0;
-    margin: auto;
-}
-.footer-wrapped a:hover{
-    border-bottom: 1px solid #ccc;
-}
-.footer-wrapped a{
-    color: #757575;
-    text-decoration: none;
-}
-.footer-wrapped .part-one li a:hover{
-    border-bottom: 1px solid #ccc;
-}
-.footer-wrapped .part-one li a{
-    color: #757575;
-    text-decoration: none;
-    font-size: 13px;
-}
-.footer-btn {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer-btn .form-select {
-    color: #ccc;
-    width: max-content;
-    padding: 8px 25px;
-    border: 1px solid rgb(170, 170, 170);
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: transparent;
-}
-
-.footer-btn .form-select option {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.footer-wrapped .col-md{
-    padding-top: 20px;
-    font-size: 13px;
-}
-
-ul { 
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li{
-    margin-bottom: 10px;
-}

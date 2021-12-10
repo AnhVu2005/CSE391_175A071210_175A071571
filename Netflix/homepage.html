@@ -51,7 +51,7 @@
             <li><a class="dropdown-item" href="#">English</a></li>
           </ul>
         </div>
-        <a href="">Đăng nhập</a>
+        <a href="login.html">Đăng nhập</a>
       </div>
     </header>
     <!-- end header -->
@@ -72,7 +72,10 @@
           </p>
         </div>
         <div class="search">
-          <input type="text" name="" id="" placeholder="Địa chỉ email" />
+          <div class="search__content--input">
+            <input type="email" id="email" />
+            <label class="banner__input--lable" for="email">Địa chỉ email</label>
+          </div>
           <button class="start-btn">
             Bắt đầu<span class="material-icons-outlined"
               >arrow_forward_ios</span
@@ -94,6 +97,13 @@
           Xem các bộ phim và chương trình truyền hình mới được tuyển chọn mà
           không cần cung cấp thông tin thanh toán!
         </p>
+        <div class="app-download">
+          <a href="">Tải ứng dụng 
+            <span class="material-icons-outlined">
+              arrow_forward_ios
+              </span>
+          </a>
+        </div>
       </div>
       <div class="img mt-3">
         <img src="images/img01.jpg" alt="" />
@@ -192,28 +202,34 @@
         </div>
       </div>
 
+      <!-- Email Form -->
       <section class="email-form">
         <div class="box">
-            <div class="heading">
-              <p>
-                Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư
-                cách thành viên của bạn.
-              </p>
-            </div>
-            <div class="search">
-              <input type="text" name="" id="" placeholder="Địa chỉ email" />
+          <div class="heading">
+            <p>
+              Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư
+              cách thành viên của bạn.
+            </p>
+          </div>
+            <div class="email__search">
+              <div class="search__content--input">
+                <input type="email" id="email" />
+                <label class="form__input--label" for="email">Địa chỉ email</label>
+              </div>
               <button class="start-btn">
                 Bắt đầu<span class="material-icons-outlined"
                   >arrow_forward_ios</span
                 >
               </button>
             </div>
-          </div>
-    </section>
+
+        </div>
+      </section>
+      <!-- end email form -->
     </section>
     <!-- end list section -->
 
-    <!-- footer (chưa được css)-->
+    <!-- footer (chưa được css button)-->
     <footer class="footer-wrapped">
       <a href="">Bạn có câu hỏi? Liên hệ với chúng tôi.</a>
       <div class="part-one">
@@ -251,9 +267,7 @@
           <option value="1">English</option>
         </select>
       </div>
-      <div class="col-md text-muted">
-        Netflix Việt Nam
-      </div>
+      <div class="col-md text-muted">Netflix Việt Nam</div>
     </footer>
     <!-- end footer -->
 
