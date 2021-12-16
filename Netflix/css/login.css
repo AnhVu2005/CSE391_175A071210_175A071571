@@ -71,8 +71,25 @@ body{
 }
 
 .input__wrap{
+    position: relative;
     margin-bottom: 18px;
 }
+
+.input__wrap label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    user-select: none;
+    color: #ccc;
+}
+
+.input__wrap input:focus + label {
+    top: 10px;
+    font-size: 10px;
+    transition: 0.2s 
+}
+
 .input__wrap button{
     margin-top: 25px;
 }
