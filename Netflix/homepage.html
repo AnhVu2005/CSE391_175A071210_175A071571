@@ -36,14 +36,21 @@
     <!-- Header section -->
     <header tion class="header">
       <div class="header_container">
-        <img src="images/logo.png" alt="" />
-        <div class="btn-group">
-          <select class="form-select form-select-sm"> 
-            <option selected>Tiếng việt</option>
-            <option value="1">English</option>
-          </select>
+        <div class="header-left">
+          <img src="images/logo.png" alt="" />
         </div>
-        <a href="login.html">Đăng nhập</a>
+        <div class="header-right">
+        <div class="btn-group">
+          <button class="btn btn-outline-light btn-ms dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-globe"></i> Tiếng Việt
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="homepage.html">Tiếng Việt</a></li>
+            <li><a class="dropdown-item" href="homepage-en.html">English</a></li>
+          </ul>
+          <a class="log-in" href="login.html">Đăng nhập</a>
+        </div>
+        </div>
       </div>
     </header>
     <!-- end header -->
@@ -147,10 +154,16 @@
             <i class="icon"></i>
           </a>
           <p class="text">
-            Xem Netflix trên điện thoại thông minh, máy tính bảng, TV thông
-            minh, máy tính xách tay hoặc thiết bị phát trực tuyến, chỉ với một
-            khoản phí cố định hàng tháng. Các gói dịch vụ với mức giá từ 70.000
-            ₫ đến 260.000 ₫ mỗi tháng. Không phụ phí, không hợp đồng.
+            Xem mọi lúc, mọi nơi. Đăng nhập bằng tài khoản Netflix của bạn để 
+            xem ngay trên trang web netflix.com từ máy tính cá nhân, hoặc trên 
+            bất kỳ thiết bị nào có kết nối Internet và có cài đặt ứng dụng Netflix, 
+            bao gồm TV thông minh, điện thoại thông minh, máy tính bảng, thiết bị phát 
+            đa phương tiện trực tuyến và máy chơi game.
+            <br />
+            <br />
+            Bạn cũng có thể tải xuống các chương trình yêu thích bằng ứng dụng trên iOS, 
+            Android hoặc Windows 10. Vào phần nội dung đã tải xuống để xem trong khi di chuyển 
+            và khi không có kết nối Internet. Mang Netflix theo bạn đến mọi nơi.
           </p>
         </div>
 
@@ -190,10 +203,14 @@
             cho phụ huynh quyền kiểm soát trong khi các em có thể thưởng thức
             các bộ phim và chương trình phù hợp cho gia đình tại không gian
             riêng.
+            <br/>
+            <br/>
+            Hồ sơ Trẻ em đi kèm tính năng kiểm soát của cha mẹ (được bảo vệ bằng mã PIN), 
+            cho phép bạn giới hạn độ tuổi cho nội dung con mình được phép xem, 
+            cũng như chặn những phim hoặc chương trình mà bạn không muốn các em nhìn thấy.
           </p>
         </div>
       </div>
-
       <!-- Email Form -->
       <section class="email-form">
         <div class="box">
@@ -252,10 +269,13 @@
       </div>
 
       <div class="footer-btn">
-        <select class="form-select form-select-sm"> 
-          <option selected>Tiếng việt</option>
-          <option value="1">English</option>
-        </select>
+        <button class="btn btn-outline-light btn-ms dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-globe"></i> Tiếng Việt
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="homepage.html">Tiếng Việt</a></li>
+          <li><a class="dropdown-item" href="homepage-en.html">English</a></li>
+        </ul>
       </div>
       <div class="col-md text-muted">Netflix Việt Nam</div>
     </footer>

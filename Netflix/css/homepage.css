@@ -19,36 +19,19 @@ body{
     left: 0;
     display: flex;
     align-items: center;
-    width: 100%;
-    margin: 56px;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0;
+    margin-left: 56px;
     margin-top: 22px;
     z-index: 10000;
 }
-.header .header_container img{
-    width: 10%;
-    margin-right: 850px;
+.header .header_container .header-left img{
+    width: 6.75rem;
+    height: 2rem;
 }
 
-.btn-group {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.btn-group .form-select {
-    color: #fff;
-    width: max-content;
-    padding: 8px 22px;
-    border: 1px solid rgb(170, 170, 170);
-    font-weight: 500;
-    background-color: transparent;
-}
-
-.btn-group .form-select option {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.header .header_container a{
+.header .header_container .log-in{
     color: #fff;
     text-decoration: none;
     background-color: #e50914;
@@ -160,14 +143,13 @@ body{
 
 .banner .box .search .start-btn {    
     text-decoration: none;
-    text-transform: uppercase;
     color: #fff;
     font-weight: 400;
     letter-spacing: 0.1px;
     border-radius: 0 2px 2px 0;
     border: none;
     background: #e50914;
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     line-height: 70px;
     min-width: 200px;
     padding: 0 30px;
@@ -309,7 +291,6 @@ body{
     transform: rotate(90deg);
     transition: 5s linear;
 }
-
 /* email-form css */
 .email-form{
     background-color: black;
@@ -362,14 +343,13 @@ body{
 
 .email-form .box .email__search .start-btn {    
     text-decoration: none;
-    text-transform: uppercase;
     color: #fff;
     font-weight: 400;
     letter-spacing: 0.1px;
     border-radius: 0 2px 2px 0;
     border: none;
     background: #e50914;
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     line-height: 70px;
     min-width: 200px;
     padding: 0 30px;
@@ -423,25 +403,7 @@ body{
     text-decoration: none;
     font-size: 13px;
 }
-.footer-btn {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
-.footer-btn .form-select {
-    color: #ccc;
-    width: max-content;
-    padding: 8px 25px;
-    border: 1px solid rgb(170, 170, 170);
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: transparent;
-}
-
-.footer-btn .form-select option {
-    background-color: rgba(0, 0, 0, 0.4);
-}
 .footer-wrapped .col-md{
     padding-top: 20px;
     font-size: 13px;
