@@ -231,66 +231,53 @@ body{
     margin: auto;
 }
 .list h1{
-    color: white;
+    color: #fff;
     font-size: 3rem;
     padding: 3rem 0 4rem 0;
 }
 
-.list .menu .item button{
-    color: white;
-}
-.title{
+.accordion {
     background-color: #303030;
+    color:#fff;
+    cursor: pointer;
     padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
     font-size: 1.7rem;
     font-weight: 400;
-    text-decoration: none;
-    position: relative;
-    width: 100%;
-}
-.icon{
-    width: 20px;
-    position: relative;
-}
-.icon::before, .icon::after{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 3px;
-    background: #fff;
-    top: -1.5px;
-}
-.icon::after{
-    transform: rotate(90deg);
-    transition: 5s linear;
-}
-.text{
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
     background-color: #303030;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: normal;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\00d7";
+  }
+  
+  .panel {
+    padding: 0px 30px;
+    background-color: #303030;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
     line-height: 35px;
     margin: 3px 0;
-    display: flex;
-    opacity: 0;
-    height: 0;
-    color: white;
     font-size: 1.7rem;
     font-weight: 400;
-}
-.item:target .text{
-    opacity: 1;
-    height: auto;
-    padding: 20px 30px;
-    margin: 0;
-    border-top: 2px solid #000;
-    margin-bottom: 6px;
-}
-.item:target .icon::after{
-    transform: rotate(90deg);
-    transition: 5s linear;
-}
+  }
 /* email-form css */
 .email-form{
     background-color: black;
