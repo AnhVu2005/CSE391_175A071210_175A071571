@@ -23,12 +23,12 @@ body{
     width: 90%;
     margin: 0;
     margin-left: 56px;
-    margin-top: 22px;
+    margin-top: 25px;
     z-index: 10000;
 }
 .header .header_container .header-left img{
-    width: 6.75rem;
-    height: 2rem;
+    width: 10rem;
+    height: 2.8rem;
 }
 
 .header .header_container .log-in{
@@ -37,7 +37,7 @@ body{
     background-color: #e50914;
     padding: 7px 17px;
     border-radius: 3px;
-    margin-left: 8px;
+    margin-left: 30px;
 }
 /* end header section */
 
