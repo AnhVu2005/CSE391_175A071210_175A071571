@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.btn {
+    padding: 7px 17px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn--primary {
+    background-color: #e50914;
+    color: white;
+}
+
+.btn--primary:hover {
+    color: white;
+}
+
+.section-border {
+    border-bottom: 10px solid #222222;
+}
+
+.subscibe {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .subscibe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 620px;
+        height: 70px;
+        margin: 0 auto  ;
+    }
+}
+
+.subscribe--input {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 16px;
+    padding-top: 5px;
+    background-color: white;
+}
+
+.subscribe--input input {
+    width: 100%;
+    padding: 10px 10px 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.subscribe--input label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 14px;
+    color: #999;
+    transition: all .3s ease;
+}
+
+.subscribe--input input:focus + label {
+    top: 0;
+    font-size: 12px;
+}
+
+@media (min-width: 640px) {
+    .subscribe--input input {
+        font-size: 16px;
+    }
+    
+    .subscribe--input label {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .subscribe--input {
+        width: 450px;
+        height: 100%;
+        margin: 0;
+    }
+
+    .subscribe--input input {
+        height: 100%;
+    }
+    
+    .subscribe--input label {
+        top: 20px;
+        font-size: 16px;
+    }
+    .subscribe--input input:focus + label {
+        top: 5px;
+        font-size: 14px;
+    }
+}
+
+
+.subscribe--btn {
+    cursor: pointer;
+    min-height: 40px;
+    padding: 0 20px;
+    margin: 4px auto;
+    background-color: #e50914;
+    color: white;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.subscribe--btn > * {
+    font-size: 12px;
+}
+
+@media (min-width: 1024px) {
+    .subscribe--btn {
+        margin: 0;
+        min-height: 100%;
+    }
+    .subscribe--btn > * {
+        font-size: 26px;
+    }
+}

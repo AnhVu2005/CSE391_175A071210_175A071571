@@ -278,6 +278,10 @@ body{
     font-size: 1.7rem;
     font-weight: 400;
   }
+
+  .panel p {
+      padding: 20px 0;
+  }
 /* email-form css */
 .email-form{
     background-color: black;
@@ -405,3 +409,8 @@ li{
     margin-bottom: 10px;
 }
 /* end footer css */
+
+/* Resposive */
+@media screen and (max-width: 480px) {
+    
+}
