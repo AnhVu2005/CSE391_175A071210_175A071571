@@ -100,6 +100,11 @@
     align-items: center;
 }
 
+.login--form__remember--me input{
+    width: 16px;
+    height: 16px;
+}
+
 .login--form__remember--me label, 
 .login--form__remember a{
     font-size: 13px;
@@ -113,6 +118,7 @@
 
 .login--form__footer{
     padding: 20px 0 30px;
+    margin-top: 20px;
 }
 
 .login--form__footer--fb{
@@ -164,6 +170,7 @@
 .footer {
     border-top: 1px solid #757575;
     color: #757575;
+    padding-bottom: 20px;
 }
 
 @media screen and (min-width:640px) {
