@@ -102,6 +102,7 @@ body {
         top: 20px;
         font-size: 16px;
     }
+    
     .subscribe--input input:focus + label {
         top: 5px;
         font-size: 14px;
@@ -121,17 +122,24 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    border-radius: 2px;
+}
+
+.subscribe--btn:hover{
+    background-color: #F40612;
 }
 
 .subscribe--btn > * {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 @media (min-width: 1024px) {
     .subscribe--btn {
         margin: 0;
         min-height: 100%;
+        border-radius: 0 2px 2px 0;
     }
+
     .subscribe--btn > * {
         font-size: 19px;
     }
