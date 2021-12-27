@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+#wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+/* Sidebar */
+
+.sidebar{
+    width: 280px;
+    height: 100vh;
+    background-color: black !important;
+}
+
+.sidebar--logo{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.sidebar--icon{
+    font-size: 20px;
+}
+
+.sidebar .nav-link{
+    font-size: 18px;
+}
+
+.sidebar .nav-link.active{
+    background-color: #E50914;
+}
+
+/* End Sidebar */
+
+/* User Section */
+
+.users{
+    width: 100%;
+    padding: 30px 70px;
+}
+
+.users .table tbody{
+    border: 0 !important;
+}
+
+.users--heading{
+    color: #E50914;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-control{
+    border-color: black;
+}
+
+.users--add{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* End User Section */
