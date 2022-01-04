@@ -6,3 +6,19 @@ fqaCollapseBtns.forEach((btn, index) => {
         fqaCollapseGroups[index].classList.toggle("active");
     })
 })
+
+// login
+function validate() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    if (email == "admin" && password == "admin") {
+        document.querySelector(".login--form").setAttribute("action", "../admin/user.html")
+    }
+    else{
+        document.querySelector(".login--form").setAttribute("action", "../browse.html")
+    }
+
+    if (email == "" || password == ""){
+        alert("Login Failed!");
+    }
+}

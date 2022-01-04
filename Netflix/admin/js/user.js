@@ -1,11 +1,16 @@
 // Khai bao bien
 
-const txtHoTen = document.getElementById("txtHoTen");
-const txtEmail = document.getElementById("txtEmail");
-const txtTel = document.getElementById("txtTel");
-const txtQueQuan = document.getElementById("txtQueQuan");
-const btnLuu = document.getElementById("btnLuu");
-const tableUser = document.getElementById("bodyUser");
+let txtHoTen = document.getElementById("txtHoTen");
+let txtEmail = document.getElementById("txtEmail");
+let txtTel = document.getElementById("txtTel");
+let txtQueQuan = document.getElementById("txtQueQuan");
+let btnLuu = document.getElementById("btnLuu");
+let tableUser = document.getElementById("bodyUser");
+let puHoTen = document.getElementById("puHoTen");
+let puEmail = document.getElementById("puEmail");
+let puTel = document.getElementById("puTel");
+let puQueQuan = document.getElementById("puQueQuan");
+let puLuu = document.getElementById("puLuu");
 
 // Khai bao ham
 
@@ -36,7 +41,7 @@ function showUser(){
                 <td>${user.country}</td>
                 <td>${user.role}</td>
                 <td>
-                    <button class="btn btn-primary" onclick="editUser(${index})">Edit</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="showPopup(${index})">Edit</button>
                     <button class="btn btn-danger" onclick="delUser(${index})">Delete</button>
                 </td>
             </tr>
@@ -58,7 +63,7 @@ function showUser(){
 function addUser() {
 
     // Lay du lieu tu localStorage
-    const userDataArr = [...getData()];
+    let userDataArr = [...getData()];
 
     userDataArr.push({
         name: `${txtHoTen.value}`,
@@ -85,7 +90,7 @@ function resetInput() {
 
 function delUser(index) {
     // Lay duu lieu tu localStorage
-    const dataUserArr = [...JSON.parse(localStorage.getItem("user"))];
+    let dataUserArr = [...JSON.parse(localStorage.getItem("user"))];
 
     // Xoa du lieu va cap nhat len localStorage
     dataUserArr.splice(index, 1);
@@ -94,6 +99,20 @@ function delUser(index) {
     // Cap nhat du lieu vao bang
     showUser();
 }
+
+//Pop up
+function showPopup(index){
+    // Lay duu lieu tu localStorage
+    let dataUserArr = [...JSON.parse(localStorage.getItem("user"))];
+
+    // Show du lieu tren pop up
+    let {name, email, phone, country} = dataUserArr[index];
+    puHoTen.value = name;
+    puEmail.value = email;
+    puTel.value = phone;
+    puQueQuan.value = country;
+}
+
 
 // Bat su kien
 showUser();

@@ -82,7 +82,8 @@
     transition: all .3s;
 }
 
-.login--form__input input:focus + label{
+.login--form__input input:focus + label,
+.login--form__input input:not(:placeholder-shown) + label{
     top: 8px;
     font-size: 10px;
 }
