@@ -111,9 +111,34 @@ function showPopup(index){
     puEmail.value = email;
     puTel.value = phone;
     puQueQuan.value = country;
+
+    // Dat thuoc tinh data-index cho puLuu
+    puLuu.setAttribute("data-index", index);
+}
+
+// EditUser
+function editUser(index){
+    // Lay duu lieu tu localStorage
+    let dataUserArr = [...JSON.parse(localStorage.getItem("user"))];
+
+    // cap nhat du lieu vao mang
+    dataUserArr[index].name = puHoTen.value;
+    dataUserArr[index].email = puEmail.value;
+    dataUserArr[index].phone = puTel.value;
+    dataUserArr[index].country = puQueQuan.value;
+
+    // Cap nhat du lieu len localstorage
+    localStorage.setItem("user", JSON.stringify(dataUserArr));
+
+    // Cap nhat du lieu vao bang
+    showUser();
+
 }
 
 
 // Bat su kien
 showUser();
 btnLuu.onclick = addUser;
+puLuu.addEventListener("click", function(){
+    editUser(this.getAttribute("data-index"))
+});

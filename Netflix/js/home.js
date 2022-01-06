@@ -11,10 +11,10 @@ fqaCollapseBtns.forEach((btn, index) => {
 function validate() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    if (email == "admin" && password == "admin") {
+    if (email == "admin"  && password == "admin") {
         document.querySelector(".login--form").setAttribute("action", "../admin/user.html")
     }
-    else{
+    if (email == "jasont@gmail.com" && password == "12345678") {
         document.querySelector(".login--form").setAttribute("action", "../browse.html")
     }
 

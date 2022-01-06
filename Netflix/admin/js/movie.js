@@ -1,12 +1,13 @@
 // Khai bao bien
-
-const txtTitle = document.getElementById("txtTitle");
-const txtDesc = document.getElementById("txtDesc");
-const btnLuu = document.getElementById("btnLuu");
-const tableMovie = document.getElementById("bodyMovie");
+let txtTitle = document.getElementById("txtTitle");
+let txtDesc = document.getElementById("txtDesc");
+let btnLuu = document.getElementById("btnLuu");
+let tableMovie = document.getElementById("bodyMovie");
+let puTitle = document.getElementById("puTitle");
+let puDesc = document.getElementById("puDesc");
+let puLuu = document.getElementById("puLuu");
 
 // Khai bao ham
-
 function getData() {
     let listNotes = localStorage.getItem("movie");
     let noteObj;
@@ -31,7 +32,7 @@ function showMovie(){
                 <td>${movie.title}</td>
                 <td>${movie.desc}</td>
                 <td>
-                    <button class="btn btn-primary" onclick="editMovie(${index})">Edit</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="showPopup(${index})">Edit</button>
                     <button class="btn btn-danger" onclick="delMovie(${index})">Delete</button>
                 </td>
             </tr>
@@ -87,6 +88,41 @@ function delMovie(index) {
     showMovie();
 }
 
+//Pop up
+function showPopup(index){
+    // Lay duu lieu tu localStorage
+    let dataMovieArr = [...JSON.parse(localStorage.getItem("movie"))];
+
+    // Show du lieu tren pop up
+    let {title, desc} = dataMovieArr[index];
+    puTitle.value = title;
+    puDesc.value = desc;
+
+    // Dat thuoc tinh data-index cho puLuu
+    puLuu.setAttribute("data-index", index);
+}
+
+// EditMovie
+function editMovie(index){
+    // Lay duu lieu tu localStorage
+    let dataMovieArr = [...JSON.parse(localStorage.getItem("movie"))];
+
+    // cap nhat du lieu vao mang
+    dataMovieArr[index].title = puTitle.value;
+    dataMovieArr[index].desc = puDesc.value;
+
+    // Cap nhat du lieu len localstorage
+    localStorage.setItem("movie", JSON.stringify(dataMovieArr));
+
+    // Cap nhat du lieu vao bang
+    showMovie();
+
+}
+
+
 // Bat su kien
 showMovie();
 btnLuu.onclick = addMovie;
+puLuu.addEventListener("click", function(){
+    editMovie(this.getAttribute("data-index"))
+});
