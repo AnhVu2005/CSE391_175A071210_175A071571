@@ -73,6 +73,23 @@
     font-size: 14px;
 }
 
+.login--form__input .show-pw {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    color: #B3B3B3;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+.login--form__input input:focus ~ .show-pw,
+.login--form__input input:not(:placeholder-shown) ~ .show-pw{
+    display: inline-block;
+}
+
 .login--form__input label{
     position: absolute;
     left: 20px;
@@ -86,6 +103,12 @@
 .login--form__input input:not(:placeholder-shown) + label{
     top: 8px;
     font-size: 10px;
+}
+
+#email-warning, #pw-warning {
+    color: orange;
+    margin-top: 6px;
+    font-size: 14px;
 }
 
 .login--form__btn {

@@ -5,14 +5,13 @@
     flex-wrap: nowrap;
     height: 100vh;
     max-height: 100vh;
-    overflow-x: auto;
   }
 
 /* Sidebar */
 
 .sidebar{
     width: 280px;
-    height: 100vh;
+    height: 100%;
     background-color: black !important;
 }
 
@@ -42,6 +41,8 @@
 .users{
     width: 100%;
     padding: 30px 70px;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .users .table tbody{

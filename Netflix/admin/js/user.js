@@ -1,5 +1,4 @@
 // Khai bao bien
-
 let txtHoTen = document.getElementById("txtHoTen");
 let txtEmail = document.getElementById("txtEmail");
 let txtTel = document.getElementById("txtTel");
@@ -11,9 +10,10 @@ let puEmail = document.getElementById("puEmail");
 let puTel = document.getElementById("puTel");
 let puQueQuan = document.getElementById("puQueQuan");
 let puLuu = document.getElementById("puLuu");
+let txtPw = document.getElementById("txtPw");
+let puPw = document.getElementById("puPw");
 
 // Khai bao ham
-
 function getData() {
   let listNotes = localStorage.getItem("user");
   let noteObj;
@@ -70,6 +70,7 @@ function addUser() {
         email: `${txtEmail.value}`,
         phone: `${txtTel.value}`,
         country: `${txtQueQuan.value}`,
+        password: `${txtPw.value}`,
         role: 'user',
     });
     
@@ -85,7 +86,7 @@ function addUser() {
 };
 
 function resetInput() {
-    txtHoTen.value = txtEmail.value = txtTel.value = txtQueQuan.value = '';
+    txtHoTen.value = txtEmail.value = txtTel.value = txtQueQuan.value = txtPw.value = '';
 };
 
 function delUser(index) {
@@ -106,11 +107,12 @@ function showPopup(index){
     let dataUserArr = [...JSON.parse(localStorage.getItem("user"))];
 
     // Show du lieu tren pop up
-    let {name, email, phone, country} = dataUserArr[index];
+    let {name, email, phone, country, password} = dataUserArr[index];
     puHoTen.value = name;
     puEmail.value = email;
     puTel.value = phone;
     puQueQuan.value = country;
+    puPw.value = password;
 
     // Dat thuoc tinh data-index cho puLuu
     puLuu.setAttribute("data-index", index);
@@ -126,6 +128,7 @@ function editUser(index){
     dataUserArr[index].email = puEmail.value;
     dataUserArr[index].phone = puTel.value;
     dataUserArr[index].country = puQueQuan.value;
+    dataUserArr[index].password = puPw.value;
 
     // Cap nhat du lieu len localstorage
     localStorage.setItem("user", JSON.stringify(dataUserArr));

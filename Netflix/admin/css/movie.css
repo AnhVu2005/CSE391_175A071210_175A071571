@@ -43,6 +43,8 @@
 .movies{
     width: 100%;
     padding: 30px 70px;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .movies--heading{

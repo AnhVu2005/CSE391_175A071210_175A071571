@@ -29,7 +29,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
@@ -53,11 +53,14 @@
                       <div class="login--form__input">
                           <input type="text" id="email" placeholder=" ">
                           <label for="email">Email hoặc số điện thoại</label>
+                          <p id="email-warning"></p>
                       </div>
 
                       <div class="login--form__input">
                         <input type="password" id="password" placeholder=" ">
                         <label for="password">Mật khẩu</label>
+                        <span class="show-pw">Hiện</span>
+                        <p id="pw-warning"></p>
                     </div>
                         <button class="login--form__btn btn btn--primary" onclick="validate()">Đăng nhập</button>
 
