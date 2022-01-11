@@ -12,10 +12,10 @@ function validate() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     if (email == "admin"  && password == "admin") {
-        document.querySelector(".login--form").setAttribute("action", "/Netflix/admin/user.html")
+        document.querySelector(".login--form").setAttribute("action", "../admin/user.html")
     }
     if (email == "jasont@gmail.com" && password == "12345678") {
-        document.querySelector(".login--form").setAttribute("action", "/Netflix/browse.html")
+        document.querySelector(".login--form").setAttribute("action", "../browse.html")
     }
 
     if (email == "" || password == ""){
