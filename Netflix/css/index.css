@@ -130,6 +130,12 @@
     font-size: 10px;
 }
 
+#email-warning {
+    color: orange;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
 @media (min-width: 640px) {
     .banner--main__heading {
         font-size: 50px;
@@ -167,10 +173,10 @@
         width: 620px;
         margin: 0 auto;
     }
-    .banner--main__subscribe--input {
+    .subscribe--input {
         width: 100%;
     }
-    .banner--main__subscribe .btn {
+    .banner--main__subscribe--btn {
         flex-shrink: 0;
         border: none;
         outline: none;
@@ -183,7 +189,7 @@
 .story .container {
     width: 100%;
     height: 100%;
-    padding: 50px 20px;
+    padding: 90px 100px;
 }
 
 .story--content {
@@ -259,7 +265,6 @@
     }
 }
 
-
 .story--img img {
     width: 100%;
     height: auto;
@@ -298,7 +303,7 @@
 @media (min-width: 640px) {
     .fqa--heading {
         font-size: 40px;
-        margin-bottom: 16px;
+        margin-bottom: 42px;
     }
     .fqa--desc {
         padding: 0;
@@ -310,7 +315,7 @@
 @media (min-width: 1040px) {
     .fqa--heading {
         font-size: 50px;
-        margin-bottom: 32px;
+        margin-bottom: 42px;
     }
     .fqa--desc {
         max-width: none;
@@ -320,19 +325,19 @@
 }
 
 .fqa--collapse {
-    max-width: 726px;
+    max-width: 820px;
     margin: 0 auto;
 }
 
 .fqa--collapse__group {
-    margin-bottom: 16px;
+    margin-bottom: 7px;
 }
 
 .fqa--collapse__group--question {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 15px 3%;
     background-color: #303030;
     cursor: pointer;
     margin-bottom: 1px;
@@ -370,6 +375,15 @@
     .fqa--collapse__group--question > *,
     .fqa--collapse__group--answer p {
         font-size: 26px;
+    }
+    .fqa--collapse__group--question {
+        padding: 15px 3%;
+    }
+}
+
+@media (min-width: 1040px) {
+    .fqa--collapse__group--question {
+        padding: 25px 3%;
     }
 }
 /* /FQA STYLES */
@@ -421,6 +435,10 @@
 .footer--desc {
     font-size: 13px;
     margin-top: 8px;
+}
+
+.dropdown-item:hover {
+    text-decoration: none !important;
 }
 
 /* /FOOTER STYLES */

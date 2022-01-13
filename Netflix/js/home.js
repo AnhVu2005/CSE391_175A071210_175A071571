@@ -23,7 +23,7 @@ function validate() {
         document.querySelector(".login--form").setAttribute("action", "./browse.html")
     }
 
-    if (email == "" || password == ""){
+    if (email == "" || password == "") {
         alert("Login Failed!");
     }
 }
