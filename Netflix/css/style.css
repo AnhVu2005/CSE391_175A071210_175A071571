@@ -33,6 +33,48 @@ body {
 
 .subscibe {
     width: 100%;
+    position: relative;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe--input {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 48px;
+    padding-top: 10px;
+    margin: 0 auto 20px;
+}
+
+.subscribe--input input {
+    border: 1px solid grey;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.subscribe--input label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #8c8c8c;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+
+#email-warning {
+    color: orange;
+    margin: -5px auto 6px;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 5px;
+    font-size: 14px;
 }
 
 @media (min-width: 1024px) {
@@ -42,7 +84,12 @@ body {
         justify-content: center;
         width: 620px;
         height: 70px;
-        margin: 0 auto  ;
+        margin: 0 auto;
+    }
+    #email-warning {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
     }
 }
 
@@ -69,7 +116,7 @@ body {
     left: 10px;
     font-size: 14px;
     color: #999;
-    transition: all .3s ease;
+    transition: all .3s;
 }
 
 .subscribe--input input:focus + label {
@@ -84,6 +131,12 @@ body {
     
     .subscribe--input label {
         font-size: 16px;
+    }
+    .subscribe--input input:focus + label,
+    .subscribe--input input:not(:placeholder-shown) + label {
+    top: 5px;
+    font-size: 10px;
+    font-weight:bold;
     }
 }
 
@@ -102,11 +155,12 @@ body {
         top: 20px;
         font-size: 16px;
     }
-    
-    .subscribe--input input:focus + label {
-        top: 5px;
-        font-size: 14px;
-    }
+    .subscribe--input input:focus + label,
+    .subscribe--input input:not(:placeholder-shown) + label {
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
 }
 
 

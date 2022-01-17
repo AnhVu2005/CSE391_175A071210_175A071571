@@ -92,50 +92,6 @@
     margin-bottom: 16px;
 }
 
-.banner--main__subscribe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.banner--main__subscribe--input {
-    display: block;
-    position: relative;
-    width: 80%;
-    height: 48px;
-    padding-top: 10px;
-    margin: 0 auto 20px;
-}
-
-.banner--main__subscribe--input input {
-    border: 1px solid grey;
-    outline: none;
-    width: 100%;
-    padding: 10px;
-}
-
-.banner--main__subscribe--input label {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    color: #8c8c8c;
-    font-size: 14px;
-    transition: all .3s ease;
-}
-
-.subscribe--input input:focus + label,
-.subscribe--input input:not(:placeholder-shown) + label {
-    top: 10px;
-    font-size: 10px;
-}
-
-#email-warning {
-    color: orange;
-    margin-top: 6px;
-    font-size: 14px;
-}
-
 @media (min-width: 640px) {
     .banner--main__heading {
         font-size: 50px;
@@ -146,9 +102,6 @@
     .banner--main__desc {
         font-size: 18px;
         padding: 0 20px;
-    }
-    .banner--main__subscribe--input {
-        width: 60%;
     }
 }
 
@@ -165,21 +118,6 @@
         max-width: none;
         font-size: 19.2px;
         padding: 0 47.3px;
-    }
-    .banner--main__subscribe {
-        flex-direction: row;
-    }
-    .banner--main__subscribe {
-        width: 620px;
-        margin: 0 auto;
-    }
-    .subscribe--input {
-        width: 100%;
-    }
-    .banner--main__subscribe--btn {
-        flex-shrink: 0;
-        border: none;
-        outline: none;
     }
 }
 

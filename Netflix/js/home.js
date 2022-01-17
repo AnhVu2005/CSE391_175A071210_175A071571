@@ -1,3 +1,4 @@
+//Khai bao bien
 const fqaCollapseGroups = document.querySelectorAll(".fqa--collapse__group");
 const fqaCollapseBtns = document.querySelectorAll(".fqa--collapse__group--question");
 const showPw = document.querySelector(".show-pw");
@@ -6,13 +7,14 @@ const pwInput = document.getElementById("password");
 const emailWarning = document.getElementById("email-warning");
 const pwWarning = document.getElementById("pw-warning");
 
+// FQA Collapse Event
 fqaCollapseBtns.forEach((btn, index) => {
     btn.addEventListener("click", function() {
         fqaCollapseGroups[index].classList.toggle("active");
     })
 })
 
-// login
+// Login
 function validate() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;

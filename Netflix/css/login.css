@@ -61,6 +61,12 @@
     margin-bottom: 16px;
 }
 
+@media (min-width: 968px) {
+    .login--form__input:first-child {
+        margin-bottom: 30px;
+    }
+}
+
 .login--form__input input{
     background: #333;
     padding: 16px 20px 0;
